@@ -10,10 +10,6 @@
 }
 
 .todo-modal {
-  position: absolute;
-  right: 0;
-  bottom: 0.5rem;
-
   display: inline-flex;
   flex-flow: column nowrap;
 

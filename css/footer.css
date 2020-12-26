@@ -42,6 +42,11 @@
 .modal-btn.opened + .modal-pointer {
   display: block;
 }
+.modal-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0.5rem;
+}
 .opened {
   border: 0.5px solid rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.1);
