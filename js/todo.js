@@ -39,12 +39,11 @@ function handleCheck(event) {
 }
 
 function handleEdit(event) {
-  event.preventDefault();
-
-  const form = event.target;
+  const input = event.target;
+  const form = input.parentNode;
   const idx = getEntryIndex(form);
 
-  toDos[idx].text = form[0].value;
+  toDos[idx].text = input.value;
   saveToDos();
 }
 
@@ -97,6 +96,8 @@ function paintToDo(toDoObj) {
   const todoTextInput = document.createElement('input');
   todoTextInput.type = 'text';
   todoTextInput.value = toDoObj.text;
+  todoTextInput.classList.add('todo-text-input');
+
   todoTextForm.appendChild(todoTextInput);
 
   const delBtn = document.createElement('button');
@@ -105,7 +106,10 @@ function paintToDo(toDoObj) {
 
   /* Event Listener*/
   checkBox.addEventListener('change', handleCheck);
-  todoTextForm.addEventListener('submit', handleEdit);
+  todoTextForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+  });
+  todoTextInput.onkeyup = handleEdit;
   delBtn.addEventListener('click', handleDelete);
 
   li.appendChild(checkBox);

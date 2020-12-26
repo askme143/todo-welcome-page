@@ -37,6 +37,7 @@
 
   color: #ecf0f1;
 }
+
 .todo-modal .empty-msg {
   display: flex;
   justify-content: center;
@@ -51,6 +52,38 @@
   width: 100%;
   height: 0px;
 }
+
+.todo-form {
+  flex-grow: 0;
+
+  width: 100%;
+  height: 3rem;
+
+  background-color: #2d3436;
+  filter: brightness(110%);
+
+  box-sizing: border-box;
+  padding: 0 1rem 0 1rem;
+}
+.todo-form input {
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+  padding: 0 1rem 0 1rem;
+
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #ecf0f1;
+}
+.todo-form > input::placeholder {
+  color: #ecf0f1;
+}
+.todo-form > input:focus::placeholder {
+  color: transparent;
+}
+
 .todo-modal .todo-list {
   flex-grow: 1;
 
@@ -63,7 +96,6 @@
   padding: 0 1rem 0 1rem;
   margin: 0;
 }
-
 .todo-entry {
   display: flex;
   flex-flow: row nowrap;
@@ -116,7 +148,7 @@
   display: inline-flex;
   vertical-align: middle;
 }
-.todo-entry form input {
+.todo-text-input {
   width: 100%;
   height: 100%;
   border-style: none;
@@ -128,13 +160,7 @@
   background: transparent;
   padding: 0 1rem;
 }
-/* .todo-entry form input::placeholder {
-  color: #ecf0f1;
-} */
-/* .todo-entry form input:focus::placeholder {
-  color: transparent;
-} */
-.todo-list li.checked form input {
+.todo-entry.checked .todo-text-input {
   color: #535c68;
   text-decoration: line-through;
   pointer-events: none;
@@ -147,37 +173,6 @@
   background: transparent;
   cursor: pointer;
 }
-.todo-list li:hover .todo-del-btn {
+.todo-entry:hover .todo-del-btn {
   display: inline-block;
-}
-
-.todo-modal .todo-form {
-  flex-grow: 0;
-
-  width: 100%;
-  height: 3rem;
-
-  background-color: #2d3436;
-  filter: brightness(110%);
-
-  box-sizing: border-box;
-  padding: 0 1rem 0 1rem;
-}
-.todo-modal .todo-form > input {
-  width: 100%;
-  height: 100%;
-
-  box-sizing: border-box;
-  padding: 0 1rem 0 1rem;
-
-  border: none;
-  outline: none;
-  background: transparent;
-  color: #ecf0f1;
-}
-.todo-modal form > input::placeholder {
-  color: #ecf0f1;
-}
-.todo-modal form > input:focus::placeholder {
-  color: transparent;
 }
