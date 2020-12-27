@@ -1,7 +1,7 @@
 const API_KEY = '5e59383bc5ac9beedeb3ae7b46c40533';
 const API_URL = 'https://api.openweathermap.org/data/2.5/weather';
 const UV_URL =
-  'http://api.openweathermap.org/data/2.5/uvi?lat={lat}&lon={lon}&appid={API key}';
+  'https://api.openweathermap.org/data/2.5/uvi?lat={lat}&lon={lon}&appid={API key}';
 const ICON_URL = 'http://openweathermap.org/img/wn/'; // + code + @2x.png
 const COORDS = 'coordinates';
 
