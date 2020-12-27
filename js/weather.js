@@ -1,7 +1,6 @@
 const API_KEY = '5e59383bc5ac9beedeb3ae7b46c40533';
 const API_URL = 'https://api.openweathermap.org/data/2.5/weather';
 const COORDS = 'coordinates';
-// https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
 
 function saveCoords(coordsObj) {
   localStorage.setItem(COORDS, JSON.stringify(coordsObj));

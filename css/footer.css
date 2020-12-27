@@ -6,7 +6,7 @@
   height: 6rem;
 
   box-sizing: border-box;
-  padding: 2rem 10rem;
+  padding: 2rem 5rem;
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 0%,
@@ -16,8 +16,13 @@
 .footer-item {
   display: inline-flex;
   flex-flow: row nowrap;
+  margin-left: 1rem;
 }
 .modal-btn {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
   padding-left: 0.8rem;
   padding-right: 0.8rem;
 
