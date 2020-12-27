@@ -2,9 +2,9 @@
 
 Welcome page with clock, weather-widget, and todo list!
 
-1. Clock and Greeting
-2. Todo List
-3. Weather
+1. [Clock and Greeting](#Clock%20and%20Greeting)
+2. [Todo List](#Todo%20List)
+3. [Weather](#Weather)
 
 This page stores data in your local storage. You can find items stored in the local storage on F12 > Application tab > Local Storage. 'currentUser' is a user name on a greeting message. 'toDos' is a json list of todo-entry. 'currentCoords' has latitude-longitude information of your machine.
 
