@@ -44,79 +44,75 @@
             </div>
           </div>
         </div>
-        <div class="footer-item weather">
-          <button class="js-modalBtn modal-btn opened">
-            <img
-              class="weather-img"
-              src="http://openweathermap.org/img/wn/11d@2x.png"
-              alt=""
-            />
-            <span class="weather-temperature">2.0</span>
-            <span class="weather-city">Hongseong</span>
+        <div class="js-weather footer-item">
+          <button class="js-modalBtn js-weatherBtn modal-btn hidden">
+            <img class="js-weatherImg weather-img" alt="" />
+            <span class="js-weatherTemp weather-temperature"></span>
+            <span class="js-weatherCity weather-city"></span>
           </button>
           <div class="modal-pointer">
-            <div class="js-weatherModal weather-modal modal-wrapper">
+            <div class="weather-modal modal-wrapper">
               <div class="weather-header">
-                <span class="weather-modal-city">Hongseong</span>
-                <button class="weather-modal-gps">
+                <span class="js-modalCity weather-modal-city"></span>
+                <button class="js-gps weather-gps">
                   <img src="images/location.png" />
                 </button>
               </div>
               <div class="weather-content">
-                <img
-                  class="weather-modal-img"
-                  src="http://openweathermap.org/img/wn/11d@2x.png"
-                  alt=""
-                />
-                <span class="weather-modal-temperature">2.0</span>
+                <img class="js-modalImg weather-modal-img" alt="" />
+                <span class="js-modalTemp weather-modal-temperature"></span>
               </div>
               <div class="weather-descrip">
-                <span class="weather-descrip-text">
+                <span class="js-descripText weather-descrip-text">
                   Feels like -4°C. Mist. Light breeze
                 </span>
                 <ul class="weather-detail">
-                  <li class="js-rain">
-                    <img class="weather-img" src="images/rain.png" alt="" />
-                    <span class="js-rain-text weather-text">0.13</span>
+                  <li class="js-rain hidden">
+                    <img class="detail-img" src="images/rain.png" alt="" />
+                    <span class="js-rainText weather-text">0.13</span>
                     mm/h
                   </li>
-                  <li class="js-wind">
+                  <li>
                     <img
-                      class="js-wind-img weather-img"
+                      class="js-windImg detail-img"
                       src="images/arrowhead.png"
                       alt=""
                     />
-                    <span class="js-wind-text weather-text">3.6</span>
+                    <span class="js-windText weather-text">3.6</span>
                     m/s
                   </li>
-                  <li class="js-pressure">
-                    <img src="images/pressure.png" alt="" class="weather-img" />
-                    <span class="js-pressure-text weather-text">1018</span>
+                  <li>
+                    <img src="images/pressure.png" alt="" class="detail-img" />
+                    <span class="js-pressText weather-text">1018</span>
                     hPa
                   </li>
-                  <li class="js-humidity">
+                  <li>
                     Humidity:
-                    <span class="js-humidity-text weather-text">52</span>
+                    <span class="js-humidText weather-text">52</span>
                     %
                   </li>
-                  <li class="js-uv">
+                  <li class="hidden">
                     UV:
-                    <span class="js-uv-text weather-text">1</span>
+                    <span class="js-uvText weather-text">1</span>
                   </li>
-                  <li class="js-dew">
+                  <li class="hidden">
                     Dew point:
-                    <span class="js-dew-text weather-text">0</span>
+                    <span class="js-dewText weather-text">0</span>
                     ℃
                   </li>
-                  <li class="js-visibility">
+                  <li>
                     Visibility:
-                    <span class="js-visibility-text weather-text">9.0</span>
+                    <span class="js-visibText weather-text">9.0</span>
                     km
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+          <div class="js-noLocInfo no-loc-info">No location information</div>
+          <button class="js-gps weather-gps">
+            <img src="images/location.png" />
+          </button>
         </div>
       </div>
     </div>
